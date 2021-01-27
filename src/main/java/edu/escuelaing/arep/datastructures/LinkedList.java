@@ -2,8 +2,6 @@ package edu.escuelaing.arep.datastructures;
 
 import java.io.Serializable;
 import java.util.Iterator;
-import java.util.Spliterator;
-import java.util.function.Consumer;
 
 public class LinkedList<E> implements Iterable<E>, Serializable {
 
@@ -53,22 +51,27 @@ public class LinkedList<E> implements Iterable<E>, Serializable {
         this.lastNode = lastNode;
     }
 
-    public int getSize() {
+    public int size() {
         return size;
     }
 
-    public void setSize(int size) {
-        this.size = size;
-    }
-
-    /**
-     * Returns an iterator over elements of type {@code T}.
-     *
-     * @return an Iterator.
-     */
-    @Override
     public Iterator<E> iterator() {
-        return null;
+
+        return new Iterator<E>() {
+
+            private Node<E> currentNode = firstNode;
+
+            public E next() {
+                E currentData = currentNode.getData();
+                currentNode = currentNode.getNextNode();
+                return currentData;
+            }
+
+            public boolean hasNext() {
+                return currentNode != null;
+            }
+
+        };
     }
 
 }
