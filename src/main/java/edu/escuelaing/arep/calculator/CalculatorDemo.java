@@ -16,7 +16,7 @@ public class CalculatorDemo
 {
 
     /**
-     * Main executive class receives a filename to start
+     * Main executive class receives a filename to start.
      * This method calculates mean and standard deviation of values of file.
      * @param args filename for test
      */
