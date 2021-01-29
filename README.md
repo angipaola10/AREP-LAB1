@@ -35,7 +35,7 @@ This project ia implement a basic extendable statistics calculator with two main
 * CircleCI for CI - [![CircleCI](https://circleci.com/gh/angipaola10/AREP-LAB1.svg?style=svg)](https://circleci.com/gh/angipaola10/AREP-LAB1)
 
 ## Documentation
-This repository contains a [paper](https://github.com/angipaola10/AREP-LAB1/blob/master/Documentation.pdf) that describes the proccess performed to make the program, but if you need aditional iformation in the directory [docs](https://github.com/angipaola10/AREP-LAB1/tree/master/docs) you find the documentation of site. 
+This repository contains a [paper](https://github.com/angipaola10/AREP-LAB1/blob/master/Document.pdf) that describes the proccess performed to make the program, but if you need aditional iformation in the directory [docs](https://github.com/angipaola10/AREP-LAB1/tree/master/docs) you find the documentation of site. 
 
 #### Instructions 
 If you want generate the documentation of this program, you must follow the next steps:
