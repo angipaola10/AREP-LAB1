@@ -18,7 +18,7 @@
 
 3.  Once the project is built, you can execute it with Maven in the following way:
 
-        mvn exec:java -Dexec.mainClass="edu.escuelaing.arep.calculator.App" 
+        mvn exec:java -Dexec.mainClass="edu.escuelaing.arep.calculator.CalculatorDemo" 
 
 ### Running the tests
 1. You must enter to the directory 'AREP-LAB 1' in the command terminal and run the following command:

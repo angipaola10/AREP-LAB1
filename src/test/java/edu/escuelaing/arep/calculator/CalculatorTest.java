@@ -5,6 +5,9 @@ import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
+/**
+ * The type Calculator test.
+ */
 public class CalculatorTest {
 
     private LinkedList<Double> values1;
@@ -13,6 +16,10 @@ public class CalculatorTest {
     private LinkedList<Double> values4;
 
 
+    /**
+     * Set up.
+     * Initialize the data set structures that will be used in the tests.
+     */
     @Before
     public void setUp(){
         this.values1 = createLinkedList(new Double[]{186.0,699.0,132.0,272.0,291.0,331.0,199.0,1890.0,788.0,1601.0});
@@ -21,6 +28,9 @@ public class CalculatorTest {
         this.values4 = createLinkedList(new Double[]{56.0,679.0,182.0,292.0,91.0,531.0,799.0,890.0});
     }
 
+    /**
+     * Should calculate mean.
+     */
     @Test
     public void shouldCalculateMean() {
         assertEquals(638.9, Calculator.mean(values1), 0.0);
@@ -29,6 +39,9 @@ public class CalculatorTest {
         assertEquals(440.0, Calculator.mean(values4), 0.0);
     }
 
+    /**
+     * Should calculate mean standard deviation.
+     */
     @Test
     public void shouldCalculateMeanStandardDeviation() {
         assertEquals(625.63398, Calculator.standardDeviation(values1), 0.00001);
